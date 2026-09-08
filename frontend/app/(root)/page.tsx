@@ -1,7 +1,10 @@
+import { Button } from "@/components/ui/button"
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <Button>Home page</Button>
+    </div>
   )
 }
 
