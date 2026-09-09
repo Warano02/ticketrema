@@ -2,43 +2,59 @@ import Image from 'next/image'
 import { CircleUserRound, UsersRound, Bell, Heart, Search, SlidersHorizontal, TextAlignJustify, MapPin, ChevronDown } from 'lucide-react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa'
 
+import Link from 'next/link'
+import { socials } from '@/constant'
 
-
+type Country = {
+  display: string;
+  value: string;
+  flag: string;
+}
+const countries: Country[] = [
+  {
+    display: "Cameroun",
+    value: "cameroun",
+    flag: "/cameroun.png"
+  }
+]
 
 export default function Header() {
   return (
-    <>
-      <div className='flex justify-between  bg-[#f5f5f5] h-12'>
-        <div className='flex mx-6'>
-          <MapPin className='mt-3'/>
-          <select>
-            <option value=""> 
-              Cote d'ivoir
-            </option>
-            <option value="">
-              Guinee</option>
-            <option value="">Cameroun</option>
-            <option value="">Gabon</option>
-            <option value="">Senegal</option>
-            <option value="">Mali</option>
-            <option value="">Burkina Faso</option>
-            <option value="">Togo</option>
-            <option value="">Benin</option>
-            <option value="">Autre Pays</option>
+    <header className="">
+      <div className='bg-[#f5f5f5] h-12 w-full '>
+        <div className='flex justify-between  container'>
+          <div className='flex '>
+            <MapPin className='mt-3' />
+            <select>
+              <option value="">
+                Cote d'ivoir
+              </option>
+              <option value="">
+                Guinee</option>
+              <option value="">Cameroun</option>
+              <option value="">Gabon</option>
+              <option value="">Senegal</option>
+              <option value="">Mali</option>
+              <option value="">Burkina Faso</option>
+              <option value="">Togo</option>
+              <option value="">Benin</option>
+              <option value="">Autre Pays</option>
 
-          </select>
-          {/* <ChevronDown /> */}
-        </div>
-        <div className='flex gap-3 mx-6 mt-3'>
-          <FaFacebook/>
-          <FaInstagram/>
-          <FaTiktok/>
-          <FaLinkedin/>
-        </div>
+            </select>
+            {/* <ChevronDown /> */}
+          </div>
+          <div className='flex gap-3 mx-6 mt-3'>
+            <Link href=""><FaFacebook /></Link>
+            <Link href=""><FaInstagram /></Link>
+            <Link href=""><FaTiktok /></Link>
+            <Link href=""><FaLinkedin /></Link>
 
+          </div>
+
+        </div>
       </div>
-      <div className='shadow-2xl h-17 border'>
-        <div className='flex justify-between bg-white'>
+      <div className='shadow-2xl h-17 border '>
+        <div className='flex justify-between bg-white container'>
           <div>
             <Image src="/logo.png" alt='Logo' width={130} height={130} className='mt-4' />
           </div>
@@ -67,7 +83,7 @@ export default function Header() {
         </div>
       </div>
 
-    </>
+    </header>
 
   )
 }

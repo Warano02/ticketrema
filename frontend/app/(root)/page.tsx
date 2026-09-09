@@ -7,7 +7,7 @@ function HomePage() {
     <div>
       {/* <Button>Home page</Button> */}
       <div>
-        <Image src="/singuila.png" alt="Singila"/>
+        {/* <Image src="/singuila.png" alt="Singila"/> */}
       </div>
     </div>
   )

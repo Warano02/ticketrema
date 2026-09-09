@@ -1,10 +1,11 @@
+import { appName } from "@/constant";
 import { Info, CalendarDays, Mail, Share2, House, FileQuestionMark, UserCog, ShoppingCart, Star, Headset, RotateCcw, Gavel, Shield, FileText } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <div className="bg-[#f8f9fa] text-[#212529] h-80">
-      <div className='mt-120 flex justify-between m-5  mb-14'>
+      <div className='mt-120 flex justify-between m-5  mb-14 container'>
         <div className="mt-10">
           <h1 className="text-2xl font-bold">A propos</h1>
           <ul className="mt-3 space-y-2">
@@ -76,7 +77,7 @@ export default function Footer() {
 
       </div>
       <hr className="border my-3" />
-      <div className="flex justify-between text-[#212529] mt-4">
+      <div className="flex justify-between text-[#212529] mt-4 container">
 
         <ul className="flex ml-14 gap-5">
           <li className="flex">
@@ -86,7 +87,7 @@ export default function Footer() {
             <FileText />
             General Conditions of sale
           </li>
-          <li className="flex"> © 2026 TIKERAMA</li>
+          <li className="flex"> © 2026 {appName} </li>
         </ul>
         <ul className='flex gap-3 mx-6 mt-3'>
           <FaFacebook />
