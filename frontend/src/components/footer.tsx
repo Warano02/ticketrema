@@ -10,26 +10,26 @@ export default function Footer() {
           <ul className="mt-3 space-y-2">
             <li className="flex ">
               <Info />
-              Qui sommes nous
+              About us
             </li>
             <li className="flex ">
-              <CalendarDays />Tous les evenements</li>
+              <CalendarDays />All Events</li>
             <li className="flex">
               <Mail />
-              Nous contacter
+              Contact us
             </li>
           </ul>
         </div>
         <div className="mt-10">
-          <h1 className="text-2xl font-bold">Communaute</h1>
+          <h1 className="text-2xl font-bold">Community</h1>
           <ul className="mt-3 space-y-2">
             <li className="flex">
               <Share2 />
-              Nos reseaux sociaux
+              Our social network
             </li>
             <li className="flex">
               <House />
-              Point de vente physique
+              Physicals point of sales
             </li>
             <li className="flex">
               <FileQuestionMark />
@@ -39,20 +39,20 @@ export default function Footer() {
 
         </div>
         <div className="mt-10">
-          <h1 className="text-2xl font-bold">Organisateurs</h1>
+          <h1 className="text-2xl font-bold">Organizers</h1>
           <ul className="mt-3 space-y-2">
             <li className="flex">
               <UserCog />
-              devenir Organisateurs
+              Becom an Organizer
             </li>
             <li className="flex">
               <ShoppingCart />
-              Places de marche
+              Marketplace
 
             </li>
             <li className="flex">
               <Star />
-              Nos references
+              Our references
             </li>
           </ul>
         </div>
@@ -61,15 +61,15 @@ export default function Footer() {
           <ul className="mt-3 space-y-2">
             <li className="flex">
               <Headset />
-              Service client
+              Customer client
             </li>
             <li className="flex">
               <RotateCcw />
-              Politique de remboursement
+              Refund politicy
             </li>
             <li className="flex">
               <Gavel />
-              Mention legal
+              Legal notices
             </li>
           </ul>
         </div>
@@ -81,10 +81,10 @@ export default function Footer() {
         <ul className="flex ml-14 gap-5">
           <li className="flex">
             <Shield />
-            Politique de confidentialite</li>
+            Privacy policy</li>
           <li className="flex">
             <FileText />
-            Conditions general de vente
+            General Conditions of sale
           </li>
           <li className="flex"> © 2026 TIKERAMA</li>
         </ul>

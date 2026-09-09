@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { CircleUserRound, UsersRound, Bell, Heart, Search, SlidersHorizontal, TextAlignJustify, MapPin, ChevronDown } from 'lucide-react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa'
-import Flag from 'country-flag-icons/react/3x2/AC'
-import { US } from 'country-flag-icons/react/1x1'
 
 
 
